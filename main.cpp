@@ -31,11 +31,11 @@ const int MOD = 1000000007;
 const double PI = acos(-1.0);
 const double TOLERANCE = 1e-10;
 
-void multiplyVectorMatrix(const vector<double>& vector, const vector<vector<double>>& matrix, vector<double>& result, int n) {
+void multiplyVectorMatrix(const vector<double>& vec, const vector<vector<double>>& matrix, vector<double>& result, int n) {
     fore(i, n) {
         result[i] = 0;
         fore(j, n) {
-            result[i] += vector[j] * matrix[j][i];
+            result[i] += vec[j] * matrix[j][i];
         }
     }
 }
